@@ -64,6 +64,24 @@
     </ul>
 </div>
 
+@* <div class="container mt-5"> *@
+@*     <h3>Recent Audit Logs</h3> *@
+@*     @if (ViewBag.RecentAuditLogs != null && ViewBag.RecentAuditLogs.Count > 0) *@
+@*     { *@
+@*         <ul class="list-group"> *@
+@*             @foreach (var log in ViewBag.RecentAuditLogs) *@
+@*             { *@
+@*                 <li class="list-group-item">@log.UserId - @log.ActionType - @log.Timestamp</li> *@
+@*             } *@
+@*         </ul> *@
+@*     } *@
+@*     else *@
+@*     { *@
+@*         <p>No recent audit logs available.</p> *@
+@*     } *@
+@* </div> *@
+
+
 <div class="container mt-5">
     <h3>Recent Clients</h3>
     <ul class="list-group">
