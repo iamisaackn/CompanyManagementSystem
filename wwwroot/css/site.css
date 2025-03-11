@@ -1,0 +1,367 @@
+html {
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+    box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+    position: relative;
+    min-height: 100vh;
+}
+
+body {
+    margin-bottom: 60px;
+    padding-top: 120px;
+}
+
+/*@media (max-width: 979px) {
+    body {
+        padding-top: 0px;
+    }
+}*/
+@media screen and (min-width:768px) and (max-width:991px) {
+    body {
+        margin-top: 150px;
+    }
+}
+
+@media screen and (min-width:992px) and (max-width:1199px) {
+    body {
+        margin-top: 100px;
+    }
+}
+
+/* banner */
+
+#banner-container {
+    background-color: #535858;
+    color: #fff !important;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+#banner-row img {
+    max-width: 65%;
+    height: auto;
+    display: block;
+    padding-left: 30px;
+}
+
+#banner-row a {
+    background-color: #fff !important;
+    color: #000 !important;
+    border: none;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+#banner-row h3, p {
+    padding-left: 20px;
+    padding-top: 20px;
+    text-align: center;
+}
+
+#banner-col {
+    padding-left: 20px;
+}
+/* service */
+#service {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#service {
+    background-color: #6a8686;
+}
+
+    #service h1 {
+        padding-bottom: 70px;
+    }
+
+/* about us */
+
+#about {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+#about {
+    background-color: rgb(112, 135, 139);
+}
+
+    #about h1 {
+        padding-bottom: 70px;
+    }
+
+#about-col ul {
+    padding-top: 50px;
+    padding-left: 50px;
+}
+
+    #about-col ul li {
+        padding-top: 15px;
+    }
+
+/* products */
+#product {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+#product {
+    background-color: #615c5f;
+}
+
+    #product h1 {
+        padding-bottom: 70px;
+    }
+
+#product-col2 ul {
+    padding-top: 90px;
+}
+
+    #product-col2 ul li {
+        padding-top: 15px;
+    }
+/* footer */
+.mb-3 {
+    padding-top: 10px;
+}
+
+@media only screen and (max-width:960px) {
+    .navbar-brand {
+        padding-left: 0;
+    }
+}
+
+@media only screen and (max-width:760px) {
+    #banner-row img {
+        padding-top: 20px;
+    }
+
+    .social-col {
+        width: 33%;
+    }
+}
+
+/* Dashboard */
+.count-container {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    text-align: center;
+}
+
+    .count-container li {
+        background-color: #3498db;
+        padding: 50px 0;
+        border-radius: 10px !important;
+        font-weight: bold;
+    }
+.list-group-item {
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+/* Media query for small screens */
+@media screen and (max-width: 768px) {
+    .count-container {
+        grid-template-columns: 1fr 1fr; /* 2 columns for small screens */
+    }
+}
+
+
+/*Login*/
+.login-container {
+    background-color: #243b55;
+}
+
+.login-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    padding: 40px;
+    transform: translate( -50%, -50% );
+    background: rgba(0, 0, 0, .7);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0,0,0,.6);
+    border-radius: 10px;
+}
+
+    .login-box h2 {
+        margin: 0 0 30px;
+        padding: 0;
+        color: #fff;
+        text-align: center;
+    }
+
+    .login-box .user-box {
+        position: relative;
+    }
+
+        .login-box .user-box input {
+            width: 100%;
+            padding: 10px 0;
+            font-size: 16px;
+            color: #fff;
+            margin-bottom: 30px;
+            border: none;
+            border-bottom: 1px solid #fff;
+            outline: none;
+            background: transparent;
+        }
+
+        .login-box .user-box label {
+            position: absolute;
+            top: 0;
+            left: 0;
+            padding: 10px 0;
+            font-size: 16px;
+            color: #fff;
+            pointer-events: none;
+            transition: top 0.3s ease, font-size 0.3s ease, color 0.3s ease;
+        }
+
+        .login-box .user-box input:focus ~ label,
+        .login-box .user-box input:valid ~ label {
+            top: -20px;
+            left: 0;
+            color: #03ef94;
+            font-size: 12px;
+        }
+
+    .login-box form a {
+        position: relative;
+        display: inline-block;
+        padding: 10px 20px;
+        color: #03ef94;
+        font-size: 16px;
+        text-decoration: none;
+        text-transform: uppercase;
+        overflow: hidden;
+        transition: .5s;
+        margin-top: 40px;
+        letter-spacing: 4px;
+    }
+
+    .login-box a:hover {
+        background: #03ef94;
+        color: #fff;
+        border-radius: 5px;
+        box-shadow: 0 0 5px #03ef94, 0 0 25px #03ef94, 0 0 50px #03ef94, 0 0 100px #03ef94;
+    }
+
+    .login-box a span {
+        position: absolute;
+        display: block;
+    }
+
+        .login-box a span:nth-child(1) {
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, #03ef94);
+            animation: btn-anim1 1s linear infinite;
+        }
+
+@keyframes btn-anim1 {
+    0% {
+        left: -100%;
+    }
+
+    50%, 100% {
+        left: 100%;
+    }
+}
+
+.login-box a span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #03ef94);
+    animation: btn-anim2 1s linear infinite;
+    animation-delay: .25s;
+}
+
+@keyframes btn-anim2 {
+    0% {
+        top: -100%;
+    }
+
+    50%, 100% {
+        top: 100%;
+    }
+}
+
+.login-box a span:nth-child(3) {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, #03ef94);
+    animation: btn-anim3 1s linear infinite;
+    animation-delay: .5s;
+}
+
+@keyframes btn-anim3 {
+    0% {
+        right: -100%;
+    }
+
+    50%, 100% {
+        right: 100%;
+    }
+}
+
+.login-box a span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #03ef94);
+    animation: btn-anim4 1s linear infinite;
+    animation-delay: .75s;
+}
+
+@keyframes btn-anim4 {
+    0% {
+        bottom: -100%;
+    }
+
+    50%, 100% {
+        bottom: 100%;
+    }
+}
+
+.logo {
+    animation: move 2s ease-in-out infinite;
+}
+
+
+@keyframes move {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/*td {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}*/

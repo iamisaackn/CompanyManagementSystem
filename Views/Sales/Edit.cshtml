@@ -1,0 +1,13 @@
+﻿@model Sale
+
+@section title {
+    @if (Model != null)
+    {
+        <h3>Sale: @Model.SaleId</h3>
+    }
+}
+
+@if (Model != null)
+{
+    <partial name="_Sales" model="@Model" />
+}

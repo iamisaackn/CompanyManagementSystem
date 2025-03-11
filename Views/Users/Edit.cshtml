@@ -1,0 +1,13 @@
+﻿@model UserRole
+
+@section title {
+    @if (Model != null)
+    {
+        <h3>User: @Model.applicationUser.Id</h3>
+    }
+}
+
+@if (Model != null)
+{
+    <partial name="_Users" model="@Model" />
+}
